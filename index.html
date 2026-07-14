@@ -11,27 +11,39 @@
 </head>
 <body>
 <header>
-    <a href="#"><img src="assets/logo_white.svg" alt="logo"> Anaïs M.</a>
+    <a href="#hero" id="logo">
+        <img src="assets/logo_white.svg" alt="logo">
+        Anaïs M.
+    </a>
     <nav>
-        <a href="#">A propos</a>
-        <a href="#">Projets</a>
-        <a href="#">Me contacter</a>
+        <a href="#aPropos">A propos</a>
+        <a href="#projets">Projets</a>
+        <a href="#contact">Me contacter</a>
     </nav>
 
 </header>
 <main>
+    <a href="#" id="to-the-top"><img src="assets/arrow.svg" alt="top arrow"></a>
+
     <div id="hero">
+        <img src="assets/annaHype.svg" alt="" id="chibi">
 
+        <div id="hello">
+            <h1>Hello,<br> I'm Anaïs</h1>
 
-        <img src="assets/annaHype.svg" alt="">
+            <div class="hero-grid">
+                <p class="tag">Développeuse web</p>
+                <p class="tag">Jeune diplômée</p>
 
-        <h1>Hello,<br> I'm Anaïs</h1>
-        <p class="tag">Développeuse web</p>
-        <p class="tag">Jeune diplômée</p>
+                <div class="socials">
+                    <a target="_blank"  href="https://github.com/AnnaAnnakie"><img src="assets/GitHub.svg" alt="GitHub" class="icon"></a>
+                    <a target="_blank"  href="https://www.linkedin.com/in/ana%C3%AFs--marchetti/"><img src="assets/LinkedIn.svg"
+                                                                                      alt="LinkedIn" class="icon"></a>
+                </div>
 
-        <a href=""><img src="assets/GitHub.svg" alt="" class="icon"></a>
-        <a href=""><img src="assets/LinkedIn.svg" alt="" class="icon"></a>
-        <a href="mon-cv.pdf" download="CV_Prenom_Nom.pdf" id="download-cv">Télécharger mon CV</a>
+                <a target="_blank"  href="download/CV%20Anaïs%20Marchetti%20FR.pdf" download="CV_Prenom_Nom.pdf" id="download-cv">Télécharger mon CV</a>
+            </div>
+        </div>
     </div>
     <img src="assets/transition.svg" alt="transition" class="transition">
     <div id="aPropos">
@@ -67,7 +79,7 @@
     <div id="projets">
         <div>
             <h1>Zest</h1>
-            <h2>Contexte</h2>
+            <h3>Contexte</h3>
             <p>
                 Zest est une application de quiz réalisé dans le cadre d’un projet de cours. Le sujet était libre,
                 seul les langages étaient imposés.
@@ -100,7 +112,7 @@
 
     <div id="contact">
         <div>
-            <h3>Me contacter</h3>
+            <h2>Me contacter</h2>
             <p>Si vous souhaitez m’envoyer un retour ou un gentil petit message.</p>
 
             <a href="">anais.marchetti.pro@gmail.com</a>
