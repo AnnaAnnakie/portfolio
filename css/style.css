@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@font-face {
+    font-family: Handmade_Alphabet;
+    src: url("../fonts/Handmade Alphabet.otf");
+}
+
+:root {
+    --dark-neon-pink: #201424;
+    --neon-dark-pink: #2D232B;
+    --lighter-neon-dark-pink: #432f3f;
+
+    --midnight-violet: #3D2645;
+    --royal-plum: #832161;
+    --light-pink: #F2BFCB;
+    --ghost-white: #F0EFF4;
+
+    --orange: #F48C13;
+    --light-orange: #FFDAA2;
+
+    --text: #fff;
+    --background: var(--neon-dark-pink);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    font-family: Handmade_Alphabet, sans-serif;
+    color: var(--text);
+}
+
+h3, a, p, input, label, textarea {
+    font-family: Krub, sans-serif;
+    color: var(--text);
+}
+
+h1 {
+    font-size: 8rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    background-color: var(--background);
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.icon {
+    height: 2rem;
+}
+
+.tag {
+    display: inline-block;
+    border: 2px solid var(--text);
+    border-radius: 50px;
+    padding: 10px;
+}
+
+#download-cv {
+    background-color: #fff;
+    color: var(--midnight-violet);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#hero {
+    padding-top: 120px;
+    background: linear-gradient(var(--dark-neon-pink), var(--midnight-violet));
+    padding-left: clamp(20px, 10vw, 10vw);
+    padding-right: clamp(20px, 10vw, 10vw);
+}
+
+.transition {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+#projets {
+    background-color: var(--midnight-violet);
+}
+
+#contact {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+
+    form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        width: 40%;
+
+        input, textarea {
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid var(--ghost-white);
+            padding: 2px 0 0 10px;
+            &:not(textarea) {
+                height: 2rem;
+            }
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            margin: 20px 0;
+        }
+
+        .wide {
+            grid-column: span 2 / span 2;
+        }
+
+        button {
+            font-family: Krub, sans-serif;
+            font-size: 16px;
+            background-color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 20px;
+            color: var(--midnight-violet);
+        }
+    }
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    background-color: var(--midnight-violet);
+}
