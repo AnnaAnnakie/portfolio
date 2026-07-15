@@ -512,10 +512,6 @@ footer {
         gap: 40px;
         text-align: center;
     }
-
-    #contact form {
-        width: 100%;
-    }
 }
 
 /* mobile */
@@ -568,9 +564,19 @@ footer {
     #aPropos {
         padding: 50px var(--margin);
         text-align: center;
+        h1{
+            display: flex;
+            align-items: center;
+            img{
+                width: 90px;
+            }
+        }
         div{
             .photo{
-                margin-left: 0;
+                margin: 0;
+                width: 80vw;
+                height: 80vw;
+                border-radius: 0;
             }
             #infos{
                 display: flex;
@@ -592,6 +598,7 @@ footer {
     }
 
     form {
+        width: 80vw;
         grid-template-columns: 1fr;
         .wide {
             grid-column: span 1;
@@ -599,10 +606,7 @@ footer {
     }
 
     #to-the-top {
-        right: 15px;
-        bottom: 15px;
-        width: 30px;
-        height: 30px;
+        display: none;
     }
 
     .burger.active .bar:nth-child(1) {
