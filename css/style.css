@@ -223,7 +223,79 @@ header {
 }
 
 #projets {
+    padding: 50px var(--margin);
     background-color: var(--midnight-violet);
+
+    #zest {
+        display: flex;
+        justify-content: space-around;
+        h1{
+            z-index: 2;
+        }
+        .decoration{
+            position: absolute;
+            &#yellowStar{
+                left: var(--margin);
+                margin-top: 30px;
+            }
+            &#pinkPolygon{
+                left: calc(var(--margin) + 60px);
+            }
+            &#altPinkPolygon{
+                left: calc(var(--margin) + 255px);
+                margin-top: 75px;
+            }
+        }
+
+        div:first-child {
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+            margin-left: 50px;
+        }
+
+        a {
+            align-self: center;
+            text-decoration: underline;
+            margin: 150px 0 30px 0;
+        }
+
+        .infoProject {
+            position: absolute;
+            right: var(--margin);
+        }
+
+        #screenshot{
+            margin: 0 0 50px 0;
+        }
+    }
+
+    .tags {
+        display: inline-block;
+        align-self: center;
+
+        & * {
+            margin: 0 10px;
+        }
+    }
+
+    #skills {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 20px;
+
+        #scroller {
+            img {
+                width: 50px;
+                height: 50px;
+                background-color: var(--royal-plum);
+                padding: 12px;
+                margin: 20px 10px 0 10px;
+                border-radius: 10px;
+            }
+        }
+    }
 }
 
 #contact {
