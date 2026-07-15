@@ -72,12 +72,12 @@ html {
     text-align: center;
 }
 
-#to-the-top{
+#to-the-top {
     position: fixed;
     width: 40px;
     height: 40px;
-    right: calc(var(--margin)/2);
-    bottom: calc(var(--margin)/1.5);
+    right: calc(var(--margin) / 2);
+    bottom: calc(var(--margin) / 1.5);
     color: var(--text);
     border-radius: 50px;
     border: 2px solid var(--text);
@@ -156,6 +156,70 @@ header {
     max-width: 100%;
     height: auto;
     display: block;
+}
+
+#aPropos {
+    padding: 50px var(--margin);
+
+    h1 {
+        display: inline-flex;
+    }
+
+    div {
+        display: flex;
+
+        #infos {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 30px;
+
+            div {
+                flex-direction: column;
+            }
+
+            #about {
+                grid-row: span 2 / span 2;
+            }
+
+            #softSkills {
+                grid-column-start: 2;
+            }
+
+            .block {
+                background-color: var(--lighter-neon-dark-pink);
+                padding: 20px;
+                border-radius: 15px;
+                flex-grow: 1;
+
+                .inline {
+                    flex-direction: row;
+                    justify-content: space-between;
+
+                    &:first-child {
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+
+            #redirect {
+                flex-direction: row;
+                justify-content: space-around;
+                padding-top: 10px;
+
+                a {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .photo {
+            border-radius: 0 0 100px 0;
+            margin-left: 100px;
+            width: 400px;
+            height: 400px;
+        }
+    }
 }
 
 #projets {
