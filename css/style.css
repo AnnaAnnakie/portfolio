@@ -34,7 +34,7 @@ h1, h2 {
     color: var(--text);
 }
 
-h3, a, p, input, label, textarea {
+h3, a, p, input, label, textarea, li {
     font-family: Krub, sans-serif;
     color: var(--text);
 }
@@ -109,6 +109,17 @@ header {
     nav {
         display: flex;
         gap: 20px;
+    }
+}
+
+#mentions-legales{
+    padding: 200px var(--margin) 20px var(--margin);
+    background: linear-gradient(var(--dark-neon-pink), var(--midnight-violet));
+    h2{
+        margin-top: 20px;
+    }
+    li{
+        margin: 10px 50px;
     }
 }
 
@@ -349,6 +360,13 @@ header {
 
         .wide {
             grid-column: span 2 / span 2;
+        }
+
+        .privacy-text{
+            font-size: 0.85rem;
+            color: var(--light-pink); /* Utilise une couleur un peu plus douce que le blanc pur */
+            opacity: 0.8;
+            line-height: 1.4;
         }
 
         button {

@@ -151,21 +151,26 @@
 
         <form action="https://formspree.io/f/xbdnladk" method="POST">
             <div>
-                <label for="nom">Nom</label>
-                <input type="text" id="nom" name="nom">
+                <label for="nom">Nom <em>*</em></label>
+                <input type="text" id="nom" name="nom" required>
             </div>
             <div>
-                <label for="prenom">Prénom</label>
-                <input type="text" id="prenom" name="prenom">
+                <label for="prenom">Prénom <em>*</em></label>
+                <input type="text" id="prenom" name="prenom" required>
             </div>
             <div class="wide">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="exemple@email.com">
+                <label for="email">Email <em>*</em></label>
+                <input type="email" id="email" name="email" placeholder="exemple@email.com" required>
             </div>
             <div class="wide">
-                <label for="message">Message</label>
-                <textarea name="message" id="message" rows="6"></textarea>
+                <label for="message">Message <em>*</em></label>
+                <textarea name="message" id="message" rows="6" required></textarea>
             </div>
+
+            <div class="wide privacy-text">
+                <p>En soumettant ce formulaire, vous acceptez que les informations saisies soient exploitées dans le cadre de la relation professionnelle qui peut en découler. Vos données ne seront jamais vendues ou cédées à des tiers.</p>
+            </div>
+
             <div class="wide">
                 <button type="submit">Envoyer</button>
             </div>
@@ -173,7 +178,7 @@
     </div>
 </main>
 <footer>
-    <p>Anaïs M. - 2026</p>
+    <p>Anaïs M. - 2026 | <a href="mentions-legales.html" style="text-decoration: underline; color: inherit;">Mentions légales</a></p>
 </footer>
 <script src="js/script.js"></script>
 </body>

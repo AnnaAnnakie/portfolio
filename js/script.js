@@ -3,7 +3,6 @@ let scrollerArea = document.getElementById("scroller");
 
 const images = [
     'angular',
-    'fedora',
     'html',
     'illustrator',
     'indesign',
