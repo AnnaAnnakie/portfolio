@@ -2,8 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" type="image/x-icon" href="assets/logo_white.svg">
     <link rel="stylesheet" href="css/style.css">
@@ -20,13 +19,12 @@
         <a href="#projets">Projets</a>
         <a href="#contact">Me contacter</a>
     </nav>
-
 </header>
 <main>
     <a href="#" id="to-the-top"><img src="assets/arrow.svg" alt="top arrow"></a>
 
     <div id="hero">
-        <img src="assets/annaHype.svg" alt="" id="chibi">
+        <img src="assets/annaHype.svg" alt="Anaïs Chibi" id="chibi">
 
         <div id="hello">
             <h1>Hello,<br> I'm Anaïs</h1>
@@ -36,62 +34,43 @@
                 <p class="tag">Jeune diplômée</p>
 
                 <div class="socials">
-                    <a target="_blank" href="https://github.com/AnnaAnnakie"><img src="assets/GitHub.svg" alt="GitHub"
-                                                                                  class="icon"></a>
-                    <a target="_blank" href="https://www.linkedin.com/in/ana%C3%AFs--marchetti/"><img
-                            src="assets/LinkedIn.svg"
-                            alt="LinkedIn" class="icon"></a>
+                    <a target="_blank" href="https://github.com/AnnaAnnakie"><img src="assets/GitHub.svg" alt="GitHub" class="icon"></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/ana%C3%AFs--marchetti/"><img src="assets/LinkedIn.svg" alt="LinkedIn" class="icon"></a>
                 </div>
 
-                <a target="_blank" href="download/CV%20Anaïs%20Marchetti%20FR.pdf" download="CV_Prenom_Nom.pdf"
-                   id="download-cv">Télécharger mon CV</a>
+                <a target="_blank" href="download/CV%20Anaïs%20Marchetti%20FR.pdf" download="CV_Anais_Marchetti.pdf" id="download-cv">Télécharger mon CV</a>
             </div>
         </div>
     </div>
     <img src="assets/transition.svg" alt="transition" class="transition">
+
     <div id="aPropos">
         <h1>
             <img src="assets/pinkStar.svg" alt="star">
             A propos
         </h1>
 
-        <div>
+        <div class="apropos-content">
             <div id="infos">
                 <div id="about">
                     <h2>Qui suis-je ?</h2>
-
                     <div class="block">
                         <p>
-                            Jeune diplômée, je suis à la recherche d’un premier emploi. Je tends à me spécialiser dans
-                            le
-                            développement
-                            web essentiellement front-end.
+                            Jeune diplômée, je suis à la recherche d'un premier emploi. Je tends à me spécialiser dans le développement web essentiellement front-end.
                             <br><br>
-                            J’ai fait le choix de passer 1 an en BUT Métiers du
-                            Multimédia et
-                            de
-                            l’Internet (MMI) pour élargir mon éventail de compétences en découvrant des outils tels que
-                            la
-                            suite
-                            Adobe
-                            aux côtés de professionnels. Mais au fond, je restais attirée par l’informatique qui reste
-                            une
-                            grande
-                            partie de mon identité.
+                            J'ai fait le choix de passer 1 an en BUT Métiers du Multimédia et de l'Internet (MMI) pour élargir mon éventail de compétences en découvrant des outils tels que la suite Adobe aux côtés de professionnels. Mais au fond, je restais attirée par l'informatique qui reste une grande partie de mon identité.
                             <br><br>
                             Vous voulez en savoir plus ?
                         </p>
-
                         <div id="redirect">
-                            <a href="#projets">Mes projets &#8595; </a>
-                            <a href="#contact">Me contacter &#8595; </a>
+                            <a href="#projets">Mes projets &darr;</a>
+                            <a href="#contact">Me contacter &darr;</a>
                         </div>
                     </div>
                 </div>
 
-                <div>
+                <div id="parcours">
                     <h2>Parcours</h2>
-
                     <div class="block">
                         <div class="inline">
                             <p><strong>BUT MMI</strong></p>
@@ -107,7 +86,6 @@
 
                 <div id="softSkills">
                     <h2>Soft skills</h2>
-
                     <div class="block">
                         <p>
                             Force de proposition
@@ -123,19 +101,19 @@
             <img src="assets/photo.png" alt="photo-de-profil" class="photo">
         </div>
     </div>
-    <img src="assets/reverse-transition.svg" alt="transition" class="transition">
-    <div id="projets">
 
+    <img src="assets/reverse-transition.svg" alt="transition" class="transition">
+
+    <div id="projets">
         <div id="zest">
-            <div>
+            <div class="project-desc">
                 <img src="assets/yellowStar.svg" alt="yellow star" id="yellowStar" class="decoration">
                 <img src="assets/pinkPolygon.svg" alt="pink polygon" id="pinkPolygon" class="decoration">
                 <img src="assets/altPinkPolygon.svg" alt="altPinkPolygon" id="altPinkPolygon" class="decoration">
                 <h1>Zest</h1>
                 <h3>Contexte</h3>
                 <p>
-                    Zest est une application de quiz réalisé dans le cadre d’un projet de cours. Le sujet était libre,
-                    seul les langages étaient imposés.
+                    Zest est une application de quiz réalisé dans le cadre d'un projet de cours. Le sujet était libre, seul les langages étaient imposés.
                 </p>
 
                 <a href="https://github.com/AnnaAnnakie/SAE203">Découvrir le projet sur GitHub</a>
@@ -148,64 +126,55 @@
                 </div>
             </div>
 
-            <p class="infoProject"><strong>Projet universitaire</strong></p>
-            <img src="assets/Zest.png" alt="screenshot" id="screenshot">
+            <div class="project-media">
+                <p class="infoProject"><strong>Projet universitaire</strong></p>
+                <img src="assets/Zest.png" alt="screenshot" id="screenshot">
+            </div>
         </div>
-
 
         <hr>
         <div id="skills">
             <h3>Diverses compétences techniques</h3>
             <p>Langages, logiciels et autres que j'ai déjà eu l'occasion de manipuler</p>
-
-            <div id="scroller">
-            </div>
+            <div id="scroller"></div>
         </div>
     </div>
+
     <img src="assets/transition.svg" alt="transition" class="transition">
 
     <div id="contact">
-        <div>
+        <div class="contact-text">
             <h2>Me contacter</h2>
-            <p>Si vous souhaitez m’envoyer un retour ou un gentil petit message.</p>
-
-            <a href="">anais.marchetti.pro@gmail.com</a>
+            <p>Si vous souhaitez m'envoyer un retour ou un gentil petit message.</p>
+            <a href="mailto:anais.marchetti.pro@gmail.com">anais.marchetti.pro@gmail.com</a>
         </div>
 
         <form action="https://formspree.io/f/xbdnladk" method="POST">
             <div>
                 <label for="nom">Nom</label>
-                <input type="text" id="nom" name="nom" placeholder="">
+                <input type="text" id="nom" name="nom">
             </div>
-
             <div>
                 <label for="prenom">Prénom</label>
-                <input type="text" id="prenom" name="prenom" placeholder="">
+                <input type="text" id="prenom" name="prenom">
             </div>
-
             <div class="wide">
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" placeholder="exemple@email.com">
             </div>
-
             <div class="wide">
                 <label for="message">Message</label>
-                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                <textarea name="message" id="message" rows="6"></textarea>
             </div>
-
-            <div>
+            <div class="wide">
                 <button type="submit">Envoyer</button>
             </div>
         </form>
     </div>
-
 </main>
 <footer>
-    <p>
-        Anaïs M. - 2026
-    </p>
+    <p>Anaïs M. - 2026</p>
 </footer>
-
 <script src="js/script.js"></script>
 </body>
 </html>
