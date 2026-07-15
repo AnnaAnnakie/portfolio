@@ -136,6 +136,7 @@ header {
     padding: 200px var(--margin) 20px var(--margin);
     background: linear-gradient(var(--dark-neon-pink), var(--midnight-violet));
     min-height: calc(100vh - 300px);
+
     h2 {
         margin-top: 20px;
     }
@@ -263,25 +264,29 @@ header {
         display: flex;
         justify-content: space-around;
 
-        h1 {
-            z-index: 2;
-        }
+        #title-decoration {
+            position: relative;
 
-        .decoration {
-            position: absolute;
-
-            &#yellowStar {
-                left: var(--margin);
-                margin-top: 30px;
+            h1 {
+                z-index: 2;
             }
 
-            &#pinkPolygon {
-                left: calc(var(--margin) + 60px);
-            }
+            .decoration {
+                position: absolute;
 
-            &#altPinkPolygon {
-                left: calc(var(--margin) + 255px);
-                margin-top: 75px;
+                &#yellowStar {
+                    left: -100px;
+                    margin-top: 30px;
+                }
+
+                &#pinkPolygon {
+                    left: -30px;
+                }
+
+                &#altPinkPolygon {
+                    left: 175px;
+                    margin-top: 75px;
+                }
             }
         }
 
@@ -329,11 +334,10 @@ header {
             overflow-y: hidden;
             width: 100%;
             padding: 20px 0;
-
+            justify-content: safe center;
 
             scroll-behavior: smooth;
             -webkit-overflow-scrolling: touch;
-
 
             &::-webkit-scrollbar {
                 height: 6px;
