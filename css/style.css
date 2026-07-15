@@ -135,7 +135,7 @@ header {
 #mentions-legales {
     padding: 200px var(--margin) 20px var(--margin);
     background: linear-gradient(var(--dark-neon-pink), var(--midnight-violet));
-
+    min-height: calc(100vh - 300px);
     h2 {
         margin-top: 20px;
     }
